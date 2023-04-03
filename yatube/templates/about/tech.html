@@ -1,0 +1,54 @@
+<!-- templates/about/tech.html -->
+{% extends "base.html" %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+{% comment %} Колонки с отступом сверху и снизу {% endcomment %}
+<div class="row">
+  <h2 align="center">Вот что я умею. Наверное.</h2>
+  {% comment %}
+    Боковой блок со списком технологий
+    Займет всю ширину блока на мобильном
+    и 25% при размерах экрана ≥768px
+  {% endcomment %}
+  <aside class="col-12 col-md-3">
+    <div class="card my-4">
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            Python
+          </li>
+          <li class="list-group-item">
+            Django
+          </li>
+          <li class="list-group-item">
+            SQL
+          </li>
+          <li class="list-group-item">
+            CSS
+          </li>
+          <li class="list-group-item">
+            HTML
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+  {% comment %}
+    Статья
+    Займет всю ширину блока на мобильном
+    и 75% при размерах экрана ≥768px
+  {% endcomment %}
+  <article class="col-12 col-md-9">
+    <div class="card my-4">
+      <div class="card-body">
+        <p>Текст страницы "Технологии"</p>
+        <p>Ещё текст страницы "Технологии"</p>
+        <p>Снова текст страницы "Технологии"</p>
+        <p>Тоже текст страницы "Технологии"</p>
+        <p>И, наконец, текст страницы "Технологии"</p>
+        <p>Жаль, что мы так и не увидели текст страницы "Технологии"</p>
+      </div>
+    </div>
+  </article>
+</div>
+{% endblock %}
